@@ -2,10 +2,21 @@
 
 <html>
 <head>
-    <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/styles.css' %}">
+    <title></title>
 </head>
 <body>
-    <h1> This is index template</h1>
+    <div>
+        <div>
+            <div>
+                <div class="flex">
+                    <img class="h-8 w-8" src="{% static "myapp/images/shop.png" %}" alt="logo">
+                    <span class = text-xl>Pro Shop</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <h4>
         <!-- <a href="/myapp/items/{{item.id}}"></a> -->
         {% for item in items %}
